@@ -4,8 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Library</title>
+    <link rel="stylesheet" href="./styling/style.css">
+    <script src="scripts/libraryscript.js" defer></script>
 </head>
 <body>
+    <div id="modal">
+        <div id="modalContent">
+            <h2>Enter Book Details</h2>
+            <label for="booktitle">Book Name:</label><br>
+            <input type="text" id="booktitle" required><br><br>
+            <label for="bookauthor">Book Author:</label><br>
+            <input type="text" id="bookauthor" required><br><br>
+            <label for="bookpages">Number of Pages:</label><br>
+            <input type="number" id="bookpages" required><br><br>
+            <label for="read">read/not read</label>
+            <input id="read" type="checkbox">
+            <button id="submit">OK</button>
+            <button id="cancel">Cancel</button>
+        </div>
+    </div>
     <h1>books temporary library</h1>
+    <button class="addbookbutton">add book</button>
+    <div class="books"></div>
 </body>
 </html>
